@@ -54,3 +54,83 @@ body {
     padding: 30px; }
   .navbar {
     width: 98%; } }
+.info {
+  background: #ccc; }
+
+.info__stat {
+  position: relative;
+  top: -183px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .info__stat .stat__one {
+    width: 33.33%;
+    background: #fff;
+    padding: 30px 50px;
+    box-sizing: border-box; }
+    .info__stat .stat__one h2 {
+      font-size: 3em;
+      margin: 0; }
+    .info__stat .stat__one p {
+      font-size: 2em; }
+  .info__stat .stat__four {
+    width: 66.66%;
+    display: flex;
+    flex-wrap: wrap; }
+    .info__stat .stat__four .four__item_1, .info__stat .stat__four .four__item_2, .info__stat .stat__four .four__item_3, .info__stat .stat__four .four__item_4 {
+      width: 50%;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #fff; }
+      .info__stat .stat__four .four__item_1 h2, .info__stat .stat__four .four__item_2 h2, .info__stat .stat__four .four__item_3 h2, .info__stat .stat__four .four__item_4 h2 {
+        margin: 0;
+        font-size: 5em; }
+      .info__stat .stat__four .four__item_1 p, .info__stat .stat__four .four__item_2 p, .info__stat .stat__four .four__item_3 p, .info__stat .stat__four .four__item_4 p {
+        font-size: 2em;
+        margin: 10px; }
+
+.four__item_1 {
+  background: red; }
+
+.four__item_2 {
+  background: blue; }
+
+.four__item_3 {
+  background: green; }
+
+.four__item_4 {
+  background: purple; }
+
+.info__promo {
+  position: relative;
+  top: -183px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .info__promo .promo__item_1, .info__promo .promo__item_2, .info__promo .promo__item_3 {
+    width: 33.33%;
+    margin-top: 80px;
+    text-align: center;
+    padding: 30px 30px 0 30px;
+    box-sizing: border-box;
+    color: #fff; }
+    .info__promo .promo__item_1 h2, .info__promo .promo__item_2 h2, .info__promo .promo__item_3 h2 {
+      font-size: 3em; }
+    .info__promo .promo__item_1 p, .info__promo .promo__item_2 p, .info__promo .promo__item_3 p {
+      font-size: 2em;
+      margin-bottom: 0; }
+
+.promo__item_1 {
+  border-right: 1px solid black; }
+  .promo__item_1 svg {
+    width: 40%; }
+
+.promo__item_2 {
+  border-right: 1px solid black; }
+  .promo__item_2 svg {
+    width: 40%; }
+
+.promo__item_3 svg {
+  width: 40%; }

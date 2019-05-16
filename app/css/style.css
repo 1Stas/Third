@@ -28,34 +28,44 @@ body {
       background: white;
       color: #000;
       box-shadow: inset 0 -4px 0 0 #826550; }
-    .navbar a:last-child {
+    .navbar a:nth-child(6) {
       position: relative;
       padding: 30px 20px 30px 50px; }
 
-.login_svg {
+.navbar__popup {
+  color: #fff;
+  width: 25%;
+  background: #694D38;
+  box-sizing: border-box; }
+
+.popup_button {
+  display: block;
+  width: 35px;
+  margin: 0 auto; }
+
+.popup_menu {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  z-index: 2; }
+
+.navbar a span {
+  position: relative; }
+
+.navbar a .login_button {
   position: absolute;
-  width: 20px;
   height: 20px;
-  left: 20px;
-  top: 30px;
-  fill: #414141; }
+  left: -30px;
+  top: -1px; }
 
 .back-image {
   width: 100%; }
 
-@media (max-width: 1111px) {
-  .navbar {
-    width: 90%; } }
-
-@media (max-width: 825px) {
-  .navbar a:last-child span {
-    display: none; }
-  .navbar a:last-child {
-    padding: 30px; }
-  .navbar {
-    width: 98%; } }
 .info {
-  background: #ccc; }
+  background: #353535; }
 
 .info__stat {
   position: relative;
@@ -83,24 +93,24 @@ body {
       padding: 10px;
       box-sizing: border-box;
       color: #fff; }
-      .info__stat .stat__four .four__item_1 h2, .info__stat .stat__four .four__item_2 h2, .info__stat .stat__four .four__item_3 h2, .info__stat .stat__four .four__item_4 h2 {
-        margin: 0;
-        font-size: 5em; }
-      .info__stat .stat__four .four__item_1 p, .info__stat .stat__four .four__item_2 p, .info__stat .stat__four .four__item_3 p, .info__stat .stat__four .four__item_4 p {
-        font-size: 2em;
-        margin: 10px; }
+    .info__stat .stat__four .four__item_1 h2, .info__stat .stat__four .four__item_2 h2, .info__stat .stat__four .four__item_3 h2, .info__stat .stat__four .four__item_4 h2 {
+      margin: 0;
+      font-size: 5em; }
+    .info__stat .stat__four .four__item_1 p, .info__stat .stat__four .four__item_2 p, .info__stat .stat__four .four__item_3 p, .info__stat .stat__four .four__item_4 p {
+      font-size: 2em;
+      margin: 10px; }
 
 .four__item_1 {
-  background: red; }
+  background: #404040; }
 
 .four__item_2 {
-  background: blue; }
+  background: #4e4e4e; }
 
 .four__item_3 {
-  background: green; }
+  background: #353535; }
 
 .four__item_4 {
-  background: purple; }
+  background: #404040; }
 
 .info__promo {
   position: relative;
@@ -116,21 +126,63 @@ body {
     padding: 30px 30px 0 30px;
     box-sizing: border-box;
     color: #fff; }
-    .info__promo .promo__item_1 h2, .info__promo .promo__item_2 h2, .info__promo .promo__item_3 h2 {
-      font-size: 3em; }
-    .info__promo .promo__item_1 p, .info__promo .promo__item_2 p, .info__promo .promo__item_3 p {
-      font-size: 2em;
-      margin-bottom: 0; }
+  .info__promo .promo__item_1 h2, .info__promo .promo__item_2 h2, .info__promo .promo__item_3 h2 {
+    font-size: 3em; }
+  .info__promo .promo__item_1 p, .info__promo .promo__item_2 p, .info__promo .promo__item_3 p {
+    font-size: 2em;
+    margin-bottom: 0; }
 
-.promo__item_1 {
+.promo__item_1, .promo__item_2 {
   border-right: 1px solid black; }
-  .promo__item_1 svg {
-    width: 40%; }
-
-.promo__item_2 {
-  border-right: 1px solid black; }
-  .promo__item_2 svg {
+  .promo__item_1 svg, .promo__item_2 svg {
     width: 40%; }
 
 .promo__item_3 svg {
   width: 40%; }
+
+.footer {
+  background: #292929; }
+
+@media (max-width: 1111px) {
+  .navbar {
+    width: 90%; } }
+
+@media (min-width: 700px) and (max-width: 825px) {
+  .navbar a:nth-child(6) {
+    padding: 0; }
+    .navbar a:nth-child(6) .entrance {
+      display: none; }
+  .navbar a {
+    padding: 30px 0px 30px 5px; }
+    .navbar a .login_button {
+      top: 28px;
+      left: -20px; }
+  .navbar {
+    width: 98%; } }
+
+@media (max-width: 700px) {
+  .navbar a {
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px; }
+    .navbar a:nth-child(6) {
+      padding: 10px 10px 10px 10px; } }
+
+@media (min-width: 500px) and (max-width: 700px) {
+  .navbar {
+    padding: 10px; } }
+
+@media (max-width: 500px) {
+  .navbar a:nth-child(n+2) {
+    display: none; }
+  .navbar {
+    width: 100%;
+    margin: 0;
+    background: #826651; }
+    .navbar .nav-one {
+      padding: 26px; }
+  .navbar a:nth-child(6) {
+    padding: 0; } }
+
+@media (min-width: 500px) {
+  .navbar__popup {
+    display: none; } }

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.popup').magnificPopup({
+	$('.popup_menu').magnificPopup({
 		type: 'inline',
 		preloader: false,
 		focus: '#text',

@@ -25,8 +25,9 @@ html
 								img.login_button(src="../img/svg/login.svg", alt="login button")
 								span.entrance войти 
 						.navbar__popup(href="#")
-							a.popup_menu(href="#")
-								img.popup_button(src="../img/svg/menu_btn.svg", alt="menu button")
+							a.popup_button(href="#popup_menu")
+								img.popup_icon(src="../img/svg/menu_btn.svg", alt="menu button")
+						.popup_menu(id="popup_menu" class="mfp-hide") 1111
 				picture
 					source(media="(min-width: 768px)" srcset="../img/back-tablet.jpg")
 					source(media="(min-width: 1200px)" srcset="../img/back-desktop.jpg")

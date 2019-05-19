@@ -14,6 +14,9 @@ html
 		body
 			.main
 				.navbar-background
+					.logo-mobile
+						img(src="../img/svg/logotype-mobile.svg", alt="лого мобайл")
+					
 					.navbar
 						a(class="nava nav-one" href="#") главная
 						a(href="#") наши работы
@@ -27,12 +30,21 @@ html
 						.navbar__popup(href="#")
 							a.popup_button(href="#popup_menu")
 								img.popup_icon(src="../img/svg/menu_btn.svg", alt="menu button")
-						.popup_menu(id="popup_menu" class="mfp-hide") 1111
+							.popup_menu(id="popup_menu" class="mfp-hide")
+								a(href="#") главная 
+								a(href="#") наши работы
+								a(href="#") записаться
+								a(href="#") контакты
+								a(href="#") HTML ACADEMY
+								a(href="#") Войти
+									img.login_button(src="../img/svg/login-mobile.svg", alt="login button")
 				picture
 					source(media="(min-width: 768px)" srcset="../img/back-tablet.jpg")
 					source(media="(min-width: 1200px)" srcset="../img/back-desktop.jpg")
 					img(class="back-image" src="/img/back-desktop.jpg" alt="barbershop")
-				<!-- .info 
+				img.logo-tablet(src="../img/svg/logotype-tablet.svg" alt="barbershop-tablet")
+				img.logo-desktop(src="../img/svg/logotype-desktop.svg" alt="barbershop-desktop")
+				<!-- .info
 					.info__stat
 						.stat__one
 							h2 Стрижка у нас это выгодно

@@ -24,7 +24,7 @@ body
 		text-transform: uppercase
 		text-decoration: none
 		color: #FFF
-		font-family: PT Sans Narrow Bold
+		font-family: PT Sans Narrow
 		font-size: 16px
 		line-height: 70px
 		cursor: pointer
@@ -50,8 +50,9 @@ body
 
 .logo-desktop
 	position: absolute
-	top: 32%
+	top: 45%
 	left: 35%
+	width: 30%
 
 .navbar__popup
 	position: relative
@@ -93,7 +94,6 @@ body
 		top: 15px
 		left: 20px
 
-
 .navbar a span
 	position: relative
 
@@ -110,40 +110,60 @@ body
 	width: 100%
 
 .info
+	position: relative
+	top: -1px
 	background: #353535
+
+.info-angel
+	position: relative
+	width: 100%
+	top: 5px
 
 .info__stat
 	position: relative
-	top: -183px
+	top: -166px
 	width: 80%
 	margin: 0 auto
 	display: flex
 	flex-wrap: wrap
-	.stat__one
+	flex-direction: row
+	.stat-wrapper
 		width: 33.33%
 		background: #fff
 		padding: 30px 50px
 		box-sizing: border-box
 		h2
-			font-size: 3em
+			font-size: 40px
 			margin: 0
+			margin-bottom: 10px
 		p
-			font-size: 2em
+			font-size: 20px
+		span 
+			color: #b2b2b2
 	.stat__four
 		width: 66.66%
 		display: flex
 		flex-wrap: wrap
 		.four__item_1, .four__item_2, .four__item_3, .four__item_4
 			width: 50%
-			padding: 10px
+			padding: 20px 0px 20px 20px
 			box-sizing: border-box
 			color: #fff
 		.four__item_1 h2, .four__item_2 h2, .four__item_3 h2, .four__item_4 h2
 			margin: 0
-			font-size: 5em
+			font-size: 72px
 		.four__item_1 p, .four__item_2 p, .four__item_3 p, .four__item_4 p
-			font-size: 2em
+			font-size: 20px
 			margin: 10px
+
+.stat__one:after
+	position: absolute
+	content: ""
+	border: 30px solid black
+	left: -29px
+	top: -10px
+	border-color: white transparent transparent
+	transform: rotateZ(225deg)
 
 .four__item_1
 	background: #404040
@@ -172,13 +192,13 @@ body
 		box-sizing: border-box
 		color: #fff
 	.promo__item_1 h2, .promo__item_2 h2, .promo__item_3 h2
-		font-size: 3em
+		font-size: 30px
 	.promo__item_1 p, .promo__item_2 p, .promo__item_3 p
-		font-size: 2em
+		font-size: 20px
 		margin-bottom: 0
 
 .promo__item_1, .promo__item_2
-	border-right: 1px solid black
+	border-right: 1px solid #404040
 	svg
 		width: 40%
 
@@ -191,13 +211,53 @@ body
 
 
 
-@media (min-width: 1400px)
-	.logo-desktop
-		left: 40%
 
 @media (min-width: 1800px)
 	.logo-desktop
-		left: 44%
+		top: 40%
+
+@media (min-width: 1161px)
+	.stat-wrapper .stat__one span
+		display: none
+
+@media (max-width: 1160px)
+	.info__stat
+		flex-direction: column
+		.stat-wrapper
+			display: flex
+			width: 100%
+			padding: 0
+		
+	.info__stat .stat-wrapper h2
+		margin-bottom: 34px
+
+	.stat__one, .stat__two
+		padding: 10px 10px 10px 20px
+		width: 50%
+
+	.stat-wrapper .stat__two span
+		display: none
+
+	.info__stat .stat__four
+		width: 100%
+		.four__item_1, .four__item_2, .four__item_3, .four__item_4
+			width: 50%
+
+	.info__stat .stat__four .four__item_1 h2, .info__stat .stat__four .four__item_2 h2, .info__stat .stat__four .four__item_3 h2, .info__stat .stat__four .four__item_4 h2
+		font-size: 60px
+
+	.info__promo
+		flex-direction: column
+		.promo__item_1, .promo__item_2, .promo__item_3
+			width: 100%
+
+	.info__promo .promo__item_1, .info__promo .promo__item_2
+		border-right: 0
+		border-bottom: 1px solid #404040
+		padding: 30px
+
+	.promo__item_1 svg
+		width: 25%
 
 @media (max-width: 1111px)
 	.navbar
@@ -214,6 +274,9 @@ body
 @media (min-width: 1000px)
 	.logo-tablet
 		left: 33%
+
+	.navbar a 
+		font-size: 18px
 
 @media (max-width: 768px)
 	.navbar a:hover 
@@ -264,6 +327,7 @@ body
 		height: 50px
 		margin: 0
 		background: #826651
+		padding: 0
 		.nav-one
 			padding: 15px
 

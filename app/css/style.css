@@ -117,7 +117,7 @@ body {
 .info-angel {
   position: relative;
   width: 100%;
-  top: 5px; }
+  top: -41px; }
 
 .info__stat {
   position: relative;
@@ -205,6 +205,11 @@ body {
 .promo__item_3 svg {
   width: 40%; }
 
+.news {
+  position: relative;
+  top: -130px;
+  background: white; }
+
 .footer {
   background: #292929; }
 
@@ -236,16 +241,25 @@ body {
       width: 50%; }
   .info__stat .stat__four .four__item_1 h2, .info__stat .stat__four .four__item_2 h2, .info__stat .stat__four .four__item_3 h2, .info__stat .stat__four .four__item_4 h2 {
     font-size: 60px; }
+  .info__promo .promo__item_1 p, .info__promo .promo__item_2 p, .info__promo .promo__item_3 p {
+    margin: 10px 0; }
+  .info__promo .promo__item_1 h2, .info__promo .promo__item_2 h2, .info__promo .promo__item_3 h2 {
+    margin: 10px 0; }
   .info__promo {
     flex-direction: column; }
     .info__promo .promo__item_1, .info__promo .promo__item_2, .info__promo .promo__item_3 {
-      width: 100%; }
+      display: flex;
+      width: 100%;
+      text-align: left;
+      margin-top: 0;
+      padding: 20px 10px; }
   .info__promo .promo__item_1, .info__promo .promo__item_2 {
     border-right: 0;
-    border-bottom: 1px solid #404040;
-    padding: 30px; }
-  .promo__item_1 svg {
-    width: 25%; } }
+    border-bottom: 1px solid #404040; }
+  .promo__item_1 svg, .promo__item_2 svg, .promo__item_3 svg {
+    width: 200px;
+    padding-right: 20px;
+    margin-top: 10px; } }
 
 @media (max-width: 1111px) {
   .navbar {

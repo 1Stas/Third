@@ -211,6 +211,10 @@ body {
 .promo__item_3 svg {
   width: 40%; }
 
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  margin: 10px;
+  border: 5px solid black; }
+
 .news {
   position: relative;
   top: -130px;

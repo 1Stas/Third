@@ -74,7 +74,7 @@ body {
   width: 244px;
   display: flex;
   flex-direction: column;
-  top: -237px;
+  top: -144px;
   left: 70px;
   box-shadow: inset 25px 0px 15px -30px #000; }
   .popup_menu a {
@@ -115,10 +115,12 @@ body {
   top: -1px;
   background: #353535; }
 
-.info-angel {
-  position: absolute;
-  width: 100%;
-  bottom: 149px; }
+.angel-div {
+  position: relative; }
+  .angel-div .info-angel {
+    position: absolute;
+    width: 100%;
+    bottom: 100px; }
 
 .info__stat {
   position: relative;
@@ -217,8 +219,93 @@ body {
 
 .news {
   position: relative;
-  top: -130px;
+  width: 100%;
+  top: -100px;
   background: white; }
+  .news .news__wrapper {
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; }
+    .news .news__wrapper .news__title {
+      display: flex;
+      width: 100%;
+      padding: 20px; }
+      .news .news__wrapper .news__title h2 {
+        margin: 0;
+        line-height: 40px;
+        font-size: 30px; }
+      .news .news__wrapper .news__title a {
+        margin-left: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: PT Sans Narrow Bold;
+        font-weight: 800;
+        color: #000; }
+
+.news .news__wrapper .news__sale {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+  .news .news__wrapper .news__sale .sale__item {
+    position: relative;
+    width: 25%; }
+    .news .news__wrapper .news__sale .sale__item .sale-date {
+      position: absolute;
+      text-align: center;
+      background: #000000;
+      color: #fff;
+      top: 20px;
+      left: -60px;
+      width: 45px;
+      height: 48px; }
+      .news .news__wrapper .news__sale .sale__item .sale-date span {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        left: 4px; }
+      .news .news__wrapper .news__sale .sale__item .sale-date b {
+        position: relative;
+        font-size: 12px;
+        top: -8px; }
+    .news .news__wrapper .news__sale .sale__item p {
+      font-size: 18px; }
+
+.triangle {
+  position: absolute;
+  top: 68px;
+  left: -60px;
+  width: 45px; }
+
+.news__about {
+  width: 80%;
+  margin: 0px auto;
+  padding: 20px 0; }
+  .news__about .about__title {
+    display: flex;
+    width: 100%;
+    padding: 20px; }
+    .news__about .about__title h2 {
+      margin: 0;
+      line-height: 40px;
+      font-size: 30px; }
+    .news__about .about__title a {
+      margin-left: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: PT Sans Narrow Bold;
+      font-weight: 800;
+      color: #000; }
+
+.about__wrapper {
+  width: 80%;
+  margin: 0 auto; }
+  .about__wrapper .about__carousel img {
+    width: 100%; }
 
 .footer {
   background: #292929; }
@@ -329,8 +416,8 @@ body {
     top: 0; }
   .info__promo, .news {
     top: 0; }
-  .info-angel {
-    bottom: 169px; }
+  .angel-div .info-angel {
+    bottom: 1px; }
   .info__promo .promo__item_3 {
     margin-bottom: 40px; } }
 
@@ -399,8 +486,16 @@ body {
     text-align: center;
     padding: 40px 10px 10px 10px; }
   .info__promo .promo__item_1, .info__promo .promo__item_2 {
-    border-bottom: 0px; } }
+    border-bottom: 0px; }
+  .info__desktop {
+    display: none; } }
+
+@media (min-width: 400px) {
+  .info__promo:before {
+    left: 75px; } }
 
 @media (min-width: 500px) {
-  .navbar__popup, .logo-mobile {
+  .navbar__popup, .logo-mobile, .info__promo:before {
+    display: none; }
+  .owl-mobile {
     display: none; } }

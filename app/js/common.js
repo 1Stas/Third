@@ -31,9 +31,10 @@ $(document).ready(function(){
 	//	autoplay:true,
 	//	autoplayTimeout:2000,
 	//	smartSpeed:1900,
-		responsive: {0:{items:1}, 500:{items:2, center:false}, 900:{items:3}},
+		responsive: {0:{items:1}, 600:{items:2, center:false}, 900:{items:3}},
 	});
 });
+
 
 $(document).ready(function(){
 

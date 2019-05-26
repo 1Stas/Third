@@ -41,10 +41,11 @@
     .owl-theme .owl-dots .owl-dot span {
       width: 10px;
       height: 10px;
-      background: #D6D6D6;
-      display: block;
+      background: transparent;
+			display: block;
+			border: 2px solid white;
+			transform: rotateZ(45deg);
       -webkit-backface-visibility: visible;
-      transition: opacity 200ms ease;
-      border-radius: 30px; }
+      transition: opacity 200ms ease; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #869791; }
+      background: #fff; }

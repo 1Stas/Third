@@ -119,7 +119,7 @@ body
 	.info-angel
 		position: absolute
 		width: 100%
-		bottom: 100px
+		bottom: 70px
 
 .info__stat
 	position: relative
@@ -212,14 +212,26 @@ body
 .promo__item_3 svg
 	width: 40%
 
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
-	margin: 10px
-	border: 5px solid black
+.owl-mobile .owl-dots, .about__wrapper .owl-dots
+	text-align: center
+	.active span
+		background: #fff
+	.owl-dot
+		display: inline-block
+		margin: 30px
+		span
+			width: 10px
+			height: 10px
+			display: block
+			border: 2px solid white
+			transform: rotateZ(45deg)
+	
+
 
 .news
 	position: relative
 	width: 100%
-	top: -100px
+	top: -70px
 	background: white
 	.news__wrapper
 		width: 80%
@@ -229,11 +241,12 @@ body
 		.news__title
 			display: flex
 			width: 100%
-			padding: 20px
+			padding: 20px 60px
+			box-sizing: border-box
 			h2 
 				margin: 0
 				line-height: 40px
-				font-size: 30px
+				font-size: 40px
 			a 
 				margin-left: auto
 				border: 1px solid #ccc
@@ -243,6 +256,7 @@ body
 				font-family: PT Sans Narrow Bold
 				font-weight: 800
 				color: #000
+				font-size: 24px
 
 .news .news__wrapper .news__sale
 	display: flex
@@ -270,7 +284,7 @@ body
 				font-size: 12px
 				top: -8px
 		p 
-			font-size: 18px
+			font-size: 22px
 
 .triangle
 	position: absolute
@@ -285,11 +299,12 @@ body
 	.about__title
 		display: flex
 		width: 100%
-		padding: 20px
+		padding: 20px 60px
+		box-sizing: border-box
 		h2 
 			margin: 0
 			line-height: 40px
-			font-size: 30px
+			font-size: 40px
 		a 
 			margin-left: auto
 			border: 1px solid #ccc
@@ -299,17 +314,78 @@ body
 			font-family: PT Sans Narrow Bold
 			font-weight: 800
 			color: #000
+			font-size: 24px
 
 .about__wrapper
-	width: 80%
+	width: 85%
 	margin: 0 auto
 	.about__carousel
-		img 
-			width: 100%
+		.about-item
+			display: flex
+			height: 200px
+			border: 1px solid #ccc
+			margin-top: 20px
+			box-sizing: border-box
+			.about-img 
+				width: 20%
+				img
+					width: 100%
+					object-fit: cover
+			.about-a
+				padding: 20px 40px
+				width: 70%
+				h3 
+					font-size: 32px
+					margin: 10px
+				p 
+					font-size: 26px
+					margin: 10px
+
+.about__wrapper .owl-dots
+	text-align: center
+	.active span
+		background: #404040
+	.owl-dot
+		display: inline-block
+		margin: 30px
+		span
+			width: 10px
+			height: 10px
+			display: block
+			border: 2px solid #404040
+			transform: rotateZ(45deg)
+
+.about__carousel
+	position: relative
+	.owl-nav .owl-prev
+		position: absolute
+		width: 40px
+		height: 200px
+		top: 20px
+		background: #ccc
+		left: -20px
+	.owl-nav .owl-next
+		position: absolute
+		width: 40px
+		height: 200px
+		top: 20px
+		background: #ccc
+		right: -20px
+
+
+
+
 
 
 .footer
 	background: #292929
+
+
+
+
+
+
+
 
 
 

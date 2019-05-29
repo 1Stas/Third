@@ -120,7 +120,7 @@ body {
   .angel-div .info-angel {
     position: absolute;
     width: 100%;
-    bottom: 100px; }
+    bottom: 70px; }
 
 .info__stat {
   position: relative;
@@ -213,14 +213,24 @@ body {
 .promo__item_3 svg {
   width: 40%; }
 
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-  margin: 10px;
-  border: 5px solid black; }
+.owl-mobile .owl-dots, .about__wrapper .owl-dots {
+  text-align: center; }
+  .owl-mobile .owl-dots .active span, .about__wrapper .owl-dots .active span {
+    background: #fff; }
+  .owl-mobile .owl-dots .owl-dot, .about__wrapper .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 30px; }
+    .owl-mobile .owl-dots .owl-dot span, .about__wrapper .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      display: block;
+      border: 2px solid white;
+      transform: rotateZ(45deg); }
 
 .news {
   position: relative;
   width: 100%;
-  top: -100px;
+  top: -70px;
   background: white; }
   .news .news__wrapper {
     width: 80%;
@@ -230,11 +240,12 @@ body {
     .news .news__wrapper .news__title {
       display: flex;
       width: 100%;
-      padding: 20px; }
+      padding: 20px 60px;
+      box-sizing: border-box; }
       .news .news__wrapper .news__title h2 {
         margin: 0;
         line-height: 40px;
-        font-size: 30px; }
+        font-size: 40px; }
       .news .news__wrapper .news__title a {
         margin-left: auto;
         border: 1px solid #ccc;
@@ -243,7 +254,8 @@ body {
         text-decoration: none;
         font-family: PT Sans Narrow Bold;
         font-weight: 800;
-        color: #000; }
+        color: #000;
+        font-size: 24px; }
 
 .news .news__wrapper .news__sale {
   display: flex;
@@ -271,7 +283,7 @@ body {
         font-size: 12px;
         top: -8px; }
     .news .news__wrapper .news__sale .sale__item p {
-      font-size: 18px; }
+      font-size: 22px; }
 
 .triangle {
   position: absolute;
@@ -286,11 +298,12 @@ body {
   .news__about .about__title {
     display: flex;
     width: 100%;
-    padding: 20px; }
+    padding: 20px 60px;
+    box-sizing: border-box; }
     .news__about .about__title h2 {
       margin: 0;
       line-height: 40px;
-      font-size: 30px; }
+      font-size: 40px; }
     .news__about .about__title a {
       margin-left: auto;
       border: 1px solid #ccc;
@@ -299,13 +312,63 @@ body {
       text-decoration: none;
       font-family: PT Sans Narrow Bold;
       font-weight: 800;
-      color: #000; }
+      color: #000;
+      font-size: 24px; }
 
 .about__wrapper {
-  width: 80%;
+  width: 85%;
   margin: 0 auto; }
-  .about__wrapper .about__carousel img {
-    width: 100%; }
+  .about__wrapper .about__carousel .about-item {
+    display: flex;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    box-sizing: border-box; }
+    .about__wrapper .about__carousel .about-item .about-img {
+      width: 20%; }
+      .about__wrapper .about__carousel .about-item .about-img img {
+        width: 100%;
+        object-fit: cover; }
+    .about__wrapper .about__carousel .about-item .about-a {
+      padding: 20px 40px;
+      width: 70%; }
+      .about__wrapper .about__carousel .about-item .about-a h3 {
+        font-size: 32px;
+        margin: 10px; }
+      .about__wrapper .about__carousel .about-item .about-a p {
+        font-size: 26px;
+        margin: 10px; }
+
+.about__wrapper .owl-dots {
+  text-align: center; }
+  .about__wrapper .owl-dots .active span {
+    background: #404040; }
+  .about__wrapper .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 30px; }
+    .about__wrapper .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      display: block;
+      border: 2px solid #404040;
+      transform: rotateZ(45deg); }
+
+.about__carousel {
+  position: relative; }
+  .about__carousel .owl-nav .owl-prev {
+    position: absolute;
+    width: 40px;
+    height: 200px;
+    top: 20px;
+    background: #ccc;
+    left: -20px; }
+  .about__carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 40px;
+    height: 200px;
+    top: 20px;
+    background: #ccc;
+    right: -20px; }
 
 .footer {
   background: #292929; }

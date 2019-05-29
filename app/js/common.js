@@ -21,7 +21,7 @@ $(document).ready(function() {
 // Карусель.
 
 $(document).ready(function(){
-	$(".owl-carousel").owlCarousel({
+	$(".info-carousel").owlCarousel({
 	//	nav:true,
 	//	dots:true,
 		loop:true,
@@ -32,6 +32,18 @@ $(document).ready(function(){
 	//	autoplayTimeout:2000,
 	//	smartSpeed:1900,
 		responsive: {0:{items:1}, 600:{items:2, center:false}, 900:{items:3}},
+	});
+	$(".about__carousel").owlCarousel({
+		nav:true,
+	//	dots:true,
+		loop:true,
+		center: true,
+	//	autoWidth:true,
+	//	items:1,
+	//	autoplay:true,
+	//	autoplayTimeout:2000,
+	//	smartSpeed:1900,
+		responsive: {0:{items:1}},
 	});
 });
 

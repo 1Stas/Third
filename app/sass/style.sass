@@ -392,12 +392,48 @@ body
 		width: 80%
 		margin: 0 auto
 		color: #fff
+		padding: 40px
 		justify-content: space-between
 		box-sizing: border-box
 		.footer__item
-			width: 30%
+			width: 33%
+			h3 
+				margin-bottom: 10px
+				font-size: 26px
+			p 
+				font-size: 20px
+				letter-spacing: 2px
+				a 
+					text-decoration: none
+					color: #fff
 		.footer__item:nth-child(2)
 			text-align: center
+			.footer_social_wrapper
+				display: flex
+				flex-wrap: wrap
+				width: 60%
+				margin: 0 auto
+				justify-content: space-around
+				.footer_social
+					width: 65px
+					height: 65px
+					border: 1px solid #666
+					box-sizing: border-box
+					font-size: 55px
+				.footer_social:nth-child(1)
+					font-size: 48px
+		.footer__item:nth-child(3)
+			text-align: right
+			h3 
+				padding-right: 40px
+				margin-bottom: 30px
+			a 
+				font-size: 24px
+				color: #fff
+				text-decoration: none
+				border: 1px solid #666
+				padding: 20px
+
 
 
 
@@ -510,6 +546,20 @@ body
 	.navbar a 
 		font-size: 18px
 
+@media (max-width: 1000px)
+	.footer .footer__wrapper
+		width: 90%
+		.footer__item
+			width: 50%
+		.footer__item:nth-child(2)
+			order: 3
+			width: 100%
+			.footer_social_wrapper
+				width: 100%
+				justify-content: center
+				.footer_social
+					width: 33%
+
 @media (max-width: 950px)
 	.about__wrapper .about__carousel .about-item
 		height: 170px
@@ -556,6 +606,26 @@ body
 		margin: 0 auto
 		.owl-dot
 			margin: 10px
+
+	.footer .footer__wrapper 
+		.footer__item:nth-child(3) a
+			font-size: 20px
+		.footer__item:nth-child(2) 
+			.footer_social_wrapper 
+				margin-top: 20px
+				.footer_social:nth-child(1)
+					font-size: 66px
+				.footer_social
+					height: 100px
+					font-size: 75px
+			h3 
+				display: none
+
+	.footer .footer__wrapper .footer__item 
+		p 
+			font-size: 16px
+		h3
+			font-size: 20px
 
 @media (max-width: 768px)
 	.navbar a:hover 
@@ -644,6 +714,37 @@ body
 	.logo-tablet
 		left: 19%
 
+	.footer .footer__wrapper
+		width: 100%
+		padding: 0
+		flex-direction: column
+		.footer__item:nth-child(2)
+			order: 0
+		.footer__item
+			width: 100%
+			text-align: center
+			p a 
+				display: block
+				text-align: center
+				width: 90%
+				margin: 0 auto
+				padding: 10px
+				border: 1px solid #666
+				margin-top: 20px
+				box-sizing: border-box
+		.footer__item:nth-child(3)
+			text-align: center
+			h3 
+				padding-right: 0
+				margin-bottom: 15px
+				margin-top: 30px
+			a 
+				width: 90%
+				display: block
+				margin: 0 auto
+				margin-bottom: 20px
+				box-sizing: border-box
+
 @media (max-width: 500px)
 	.navbar a:nth-child(n+2)
 		display: none
@@ -727,7 +828,7 @@ body
 	.angel-div-gray .info-angel
 		position: relative
 		width: 100%
-		bottom: -23px
+		bottom: -4px
 
 @media (min-width: 400px)
 	.info__promo:before

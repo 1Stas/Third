@@ -34,7 +34,9 @@ body {
       color: #000;
       box-shadow: inset 0 -4px 0 0 #826550; }
     .navbar a:nth-child(6) {
-      padding: 0px 0px 0px 20px; }
+      padding: 0px 0px 0px 20px;
+      width: 100px;
+      text-align: center; }
 
 .logo-mobile {
   height: 85px; }
@@ -62,6 +64,87 @@ body {
   background: #694D38;
   box-sizing: border-box; }
 
+.nav_form {
+  position: absolute;
+  background: #fff;
+  width: 322px;
+  top: -170px;
+  right: 200px; }
+  .nav_form form {
+    padding: 10px; }
+    .nav_form form h3 {
+      font-size: 26px;
+      margin: 10px;
+      text-align: center; }
+    .nav_form form p {
+      font-size: 16px;
+      text-align: center; }
+    .nav_form form input[type="text"], .nav_form form input[type="password"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 280px; }
+    .nav_form form input[type="text"] + span {
+      position: relative; }
+      .nav_form form input[type="text"] + span:after {
+        position: absolute;
+        content: "";
+        background: url(../img/login.png) no-repeat;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        top: -50px;
+        left: 270px;
+        color: red; }
+    .nav_form form input[type="password"] + span {
+      position: relative; }
+      .nav_form form input[type="password"] + span:after {
+        position: absolute;
+        content: "";
+        background: url(../img/lock.png) no-repeat;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        top: -40px;
+        left: 270px;
+        color: red; }
+    .nav_form form input[type="checkbox"] {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      top: 5px;
+      margin-bottom: 20px; }
+    .nav_form form .form-elem {
+      padding-left: 30px;
+      color: #000000; }
+    .nav_form form input[type="submit"] {
+      display: inline-block;
+      padding: 15px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: bold;
+      background: #826651;
+      border: 1px solid #ccc;
+      font-size: 18px;
+      width: 45%;
+      margin-right: 40px; }
+    .nav_form form .form-close.mfp-close {
+      position: static;
+      height: 20px;
+      line-height: normal;
+      background: white;
+      display: inline-block;
+      padding: 15px;
+      color: #000;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      width: 30%; }
+
 .popup_icon {
   position: absolute;
   width: 35px;
@@ -74,7 +157,7 @@ body {
   width: 244px;
   display: flex;
   flex-direction: column;
-  top: -144px;
+  top: -118px;
   left: 70px;
   box-shadow: inset 25px 0px 15px -30px #000; }
   .popup_menu a {
@@ -219,7 +302,8 @@ body {
     background: #fff; }
   .owl-mobile .owl-dots .owl-dot, .about__wrapper .owl-dots .owl-dot {
     display: inline-block;
-    margin: 30px; }
+    margin: 30px;
+    border: none; }
     .owl-mobile .owl-dots .owl-dot span, .about__wrapper .owl-dots .owl-dot span {
       width: 10px;
       height: 10px;
@@ -450,6 +534,10 @@ body {
       font-size: 26px; }
     .about__wrapper .about__carousel .about-item .about-a p {
       font-size: 20px; } }
+
+@media (max-width: 1200px) {
+  .nav_form {
+    right: 30px; } }
 
 @media (max-width: 1160px) {
   .info__stat {
@@ -708,6 +796,12 @@ body {
     font-size: 18px; }
     .navbar a:nth-child(6) {
       font-size: 0.5em; }
+  .navbar .navbar__popup a {
+    position: relative;
+    top: 10px; }
+  .nav_form {
+    top: -93px;
+    right: -6px; }
   .back-image, .logo-tablet {
     display: none; }
   .info__stat .stat-wrapper {
@@ -751,6 +845,14 @@ body {
   .news__about .about__wrapper .about__carousel .about-item .about-img img {
     position: relative;
     top: 20px; }
+  .news .news__wrapper {
+    width: 90%; }
+    .news .news__wrapper .news__sale {
+      width: 100%;
+      margin: 0 auto; }
+      .news .news__wrapper .news__sale .sale__item {
+        width: 80%;
+        margin-left: 50px; }
   .angel-div-gray .info-angel {
     position: relative;
     width: 100%;

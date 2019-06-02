@@ -21,7 +21,7 @@ html
 						a(href="#") записаться
 						a(href="#") контакты
 						a(href="#") HTML ACADEMY
-						a(href="#") 
+						a.navbar_form(href="#popup_form") 
 							span 
 								img.login_button(src="../img/svg/login.svg", alt="login button")
 								span.entrance войти 
@@ -34,8 +34,23 @@ html
 								a(href="#") записаться
 								a(href="#") контакты
 								a(href="#") HTML ACADEMY
-								a(href="#") Войти
+								a.navbar_form(href="#popup_form") Войти
 									img.login_button(src="../img/svg/login-mobile.svg", alt="login button")
+						.nav_form(id="popup_form" class="mfp-hide")
+							form(action="login" method="post")
+								h3 Личный кабинет
+								p Введите свой логин и пароль, чтобы войти
+								input(type="text" name="username" placeholder="Логин")
+								span
+								input(type="password" name="password" placeholder="Пароль")
+								span
+								br
+								input(type="checkbox" checked)
+								span Запомните меня 
+								a.form-elem(href="#") Я забыл пароль!
+								br
+								input(type="submit" name="submit" value="Войти")
+								a.form-close.mfp-close(href="#") Закрыть
 				picture
 					source(media="(min-width: 768px)" srcset="../img/back-tablet.jpg")
 					source(media="(min-width: 1200px)" srcset="../img/back-desktop.jpg")

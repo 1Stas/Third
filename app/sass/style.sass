@@ -34,6 +34,8 @@ body
 			box-shadow: inset 0 -4px 0 0 #826550
 		&:nth-child(6)
 			padding: 0px 0px 0px 20px
+			width: 100px
+			text-align: center
 
 .logo-mobile 
 	height: 85px
@@ -61,6 +63,87 @@ body
 	background: #694D38
 	box-sizing: border-box
 
+.nav_form
+	position: absolute
+	background: #fff
+	width: 322px
+	top: -170px
+	right: 200px
+	form 
+		padding: 10px
+		h3
+			font-size: 26px
+			margin: 10px
+			text-align: center
+		p 
+			font-size: 16px
+			text-align: center
+		input[type="text"], input[type="password"]
+			padding: 10px
+			margin-bottom: 10px
+			width: 280px
+		input[type="text"] + span
+			position: relative
+			&:after
+				position: absolute
+				content: ""
+				background: url(../img/login.png) no-repeat
+				background-size: 100%
+				width: 20px
+				height: 20px
+				top: -50px
+				left: 270px
+				color: red
+		input[type="password"] + span
+			position: relative
+			&:after
+				position: absolute
+				content: ""
+				background: url(../img/lock.png) no-repeat
+				background-size: 100%
+				width: 20px
+				height: 20px
+				top: -40px
+				left: 270px
+				color: red
+		input[type="checkbox"]
+			position: relative
+			width: 20px
+			height: 20px
+			background: #fff
+			top: 5px
+			margin-bottom: 20px
+		.form-elem
+			padding-left: 30px
+			color: #000000
+		input[type="submit"]
+			display: inline-block
+			padding: 15px
+			text-transform: uppercase
+			color: #fff
+			font-weight: bold
+			background: #826651
+			border: 1px solid #ccc
+			font-size: 18px
+			width: 45%
+			margin-right: 40px
+		.form-close.mfp-close
+			position: static
+			height: 20px
+			line-height: normal
+			background: white
+			display: inline-block
+			padding: 15px
+			color: #000
+			font-size: 16px
+			border: 1px solid #ccc
+			text-decoration: none
+			text-align: center
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 18px
+			width: 30%
+
 .popup_icon 
 	position: absolute
 	width: 35px
@@ -73,7 +156,7 @@ body
 	width: 244px
 	display: flex
 	flex-direction: column
-	top: -144px
+	top: -118px
 	left: 70px
 	box-shadow: inset 25px 0px 15px -30px #000
 	a 
@@ -219,6 +302,7 @@ body
 	.owl-dot
 		display: inline-block
 		margin: 30px
+		border: none
 		span
 			width: 10px
 			height: 10px
@@ -465,6 +549,10 @@ body
 			font-size: 26px
 		p 
 			font-size: 20px
+
+@media (max-width: 1200px)
+	.nav_form
+		right: 30px
 
 @media (max-width: 1160px)
 	.info__stat
@@ -770,6 +858,14 @@ body
 		&:nth-child(6)
 			font-size: 0.5em
 
+	.navbar .navbar__popup a
+		position: relative
+		top: 10px
+
+	.nav_form
+		top: -93px
+		right: -6px
+
 	.back-image, .logo-tablet
 		display: none
 
@@ -824,6 +920,15 @@ body
 	.news__about .about__wrapper .about__carousel .about-item .about-img img
 		position: relative
 		top: 20px
+
+	.news .news__wrapper
+		width: 90%
+		.news__sale
+			width: 100%
+			margin: 0 auto
+			.sale__item
+				width: 80%
+				margin-left: 50px
 
 	.angel-div-gray .info-angel
 		position: relative

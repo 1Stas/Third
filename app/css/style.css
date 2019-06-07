@@ -1,4 +1,7 @@
 @charset "UTF-8";
+h1, h2, h3, h4, h5, h6, p, span, td, tr, th, a {
+  font-family: sans-serif; }
+
 body {
   padding: 0;
   margin: 0; }
@@ -25,7 +28,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #FFF;
-    font-family: PT Sans Narrow;
     font-size: 16px;
     line-height: 70px;
     cursor: pointer; }
@@ -164,7 +166,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #FFF;
-    font-family: PT Sans Narrow Bold;
     font-size: 18px;
     padding: 15px 10px 15px 20px;
     box-shadow: inset 0 -1px 0 0 #71543f; }
@@ -204,6 +205,13 @@ body {
     position: absolute;
     width: 100%;
     bottom: 70px; }
+
+.angel-div-gray {
+  position: relative; }
+  .angel-div-gray .info-angel {
+    position: absolute;
+    width: 100%;
+    bottom: -1px; }
 
 .info__stat {
   position: relative;
@@ -337,8 +345,6 @@ body {
         padding: 10px;
         text-transform: uppercase;
         text-decoration: none;
-        font-family: PT Sans Narrow Bold;
-        font-weight: 800;
         color: #000;
         font-size: 24px; }
 
@@ -397,8 +403,6 @@ body {
       padding: 10px;
       text-transform: uppercase;
       text-decoration: none;
-      font-family: PT Sans Narrow Bold;
-      font-weight: 800;
       color: #000;
       font-size: 24px; }
 
@@ -515,6 +519,180 @@ body {
         text-decoration: none;
         border: 1px solid #666;
         padding: 20px; }
+
+.work-angel-div {
+  position: relative; }
+  .work-angel-div .info-angel {
+    position: absolute;
+    width: 100%;
+    bottom: 1px; }
+
+.work-photo {
+  width: 80%;
+  margin: 0px auto; }
+  .work-photo .photo__title {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 0px;
+    box-sizing: border-box; }
+    .work-photo .photo__title h2 {
+      margin: 0;
+      line-height: 40px;
+      font-size: 40px; }
+    .work-photo .photo__title a {
+      margin-left: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000;
+      font-size: 24px; }
+  .work-photo .photo_wrapper {
+    width: 100%; }
+    .work-photo .photo_wrapper .photo_first {
+      display: flex;
+      border: 1px solid #ccc;
+      position: relative; }
+      .work-photo .photo_wrapper .photo_first h3 {
+        margin: 10px;
+        font-size: 36px; }
+      .work-photo .photo_wrapper .photo_first p {
+        margin: 10px;
+        font-size: 24px; }
+      .work-photo .photo_wrapper .photo_first .ours-work {
+        width: 70vw;
+        display: block;
+        max-width: 100%;
+        height: auto; }
+      .work-photo .photo_wrapper .photo_first:before {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 40px;
+        background: url(../img/svg/label.svg) no-repeat;
+        width: 200px;
+        height: 50px;
+        transform: rotateZ(180deg); }
+      .work-photo .photo_wrapper .photo_first:after {
+        position: absolute;
+        content: "РАБОТА МЕСЯЦА";
+        right: 10px;
+        top: 55px;
+        color: #fff;
+        font-size: 18px; }
+      .work-photo .photo_wrapper .photo_first .photo_text {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px 100px 40px 40px; }
+        .work-photo .photo_wrapper .photo_first .photo_text .photo_elem {
+          position: absolute;
+          bottom: 40px;
+          display: flex;
+          flex-wrap: wrap; }
+          .work-photo .photo_wrapper .photo_first .photo_text .photo_elem span {
+            position: relative;
+            margin-right: 150px;
+            left: 90px;
+            margin-top: 20px; }
+            .work-photo .photo_wrapper .photo_first .photo_text .photo_elem span img {
+              position: absolute;
+              left: -65px;
+              top: -10px;
+              width: 35px;
+              height: 35px; }
+          .work-photo .photo_wrapper .photo_first .photo_text .photo_elem span:nth-child(3) img {
+            width: 60px;
+            height: 20px;
+            top: 0px; }
+    .work-photo .photo_wrapper .photo_two {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      margin-bottom: 70px; }
+      .work-photo .photo_wrapper .photo_two .photo_item {
+        width: 30%;
+        border: 1px solid #ccc;
+        margin-bottom: 40px; }
+        .work-photo .photo_wrapper .photo_two .photo_item picture img {
+          width: 100%; }
+        .work-photo .photo_wrapper .photo_two .photo_item .photo_text {
+          padding: 20px 20px 90px 20px; }
+          .work-photo .photo_wrapper .photo_two .photo_item .photo_text h3 {
+            font-size: 36px;
+            margin: 10px; }
+          .work-photo .photo_wrapper .photo_two .photo_item .photo_text p {
+            font-size: 24px;
+            margin: 10px; }
+        .work-photo .photo_wrapper .photo_two .photo_item .photo_elem {
+          position: absolute;
+          bottom: 60px; }
+          .work-photo .photo_wrapper .photo_two .photo_item .photo_elem span {
+            position: relative;
+            margin-right: 80px;
+            left: 100px; }
+            .work-photo .photo_wrapper .photo_two .photo_item .photo_elem span img {
+              position: absolute;
+              left: -65px;
+              top: -10px;
+              width: 35px;
+              height: 35px; }
+      .work-photo .photo_wrapper .photo_two .photo_item:nth-child(2) .photo_elem span:nth-child(2) img {
+        width: 60px;
+        height: 20px;
+        top: 0px; }
+
+.price {
+  width: 100%;
+  background: #535353;
+  color: #fff;
+  padding: 1px 0 120px 0; }
+  .price .price_wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 150px; }
+    .price .price_wrapper h2 {
+      position: absolute;
+      top: 20px;
+      font-size: 40px;
+      letter-spacing: 5px;
+      font-family: sans-serif; }
+    .price .price_wrapper .price_table_tablet table {
+      border-collapse: collapse;
+      font-size: 26px;
+      font-family: sans-serif; }
+      .price .price_wrapper .price_table_tablet table tr td {
+        border: 1px solid gray;
+        padding: 20px 40px; }
+      .price .price_wrapper .price_table_tablet table tr th {
+        border: 1px solid gray;
+        color: gray;
+        padding: 20px 40px; }
+    .price .price_wrapper .price_table_mobile table {
+      border-collapse: collapse;
+      font-size: 18px;
+      font-family: sans-serif;
+      width: 100%; }
+      .price .price_wrapper .price_table_mobile table tr td {
+        padding: 10px; }
+  .price .price_clock {
+    border: 1px solid gray; }
+    .price .price_clock .pclock {
+      width: 50%;
+      margin: 35px auto; }
+      .price .price_clock .pclock img {
+        width: 100%; }
+    .price .price_clock p {
+      font-size: 26px;
+      padding: 10px 30px;
+      text-align: center; }
 
 @media (min-width: 1800px) {
   .logo-desktop {
@@ -852,18 +1030,176 @@ body {
       margin: 0 auto; }
       .news .news__wrapper .news__sale .sale__item {
         width: 80%;
-        margin-left: 50px; }
-  .angel-div-gray .info-angel {
-    position: relative;
-    width: 100%;
-    bottom: -4px; } }
+        margin-left: 50px; } }
 
 @media (min-width: 400px) {
   .info__promo:before {
     left: 75px; } }
 
 @media (min-width: 500px) {
-  .navbar__popup, .logo-mobile, .info__promo:before, .angel-div-gray {
+  .navbar__popup, .logo-mobile, .info__promo:before {
     display: none; }
   .owl-mobile {
     display: none; } }
+
+@media (max-width: 1200px) {
+  .work-photo .photo_wrapper .photo_first .ours-work {
+    width: 140vw; }
+  .work-photo .photo_wrapper .photo_two {
+    flex-direction: column; }
+    .work-photo .photo_wrapper .photo_two .photo_item {
+      display: flex;
+      width: 100%; }
+      .work-photo .photo_wrapper .photo_two .photo_item picture .ours-work {
+        width: 42vw;
+        display: block; }
+      .work-photo .photo_wrapper .photo_two .photo_item .photo_text {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px; }
+      .work-photo .photo_wrapper .photo_two .photo_item .photo_elem {
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        flex-wrap: wrap; }
+  .price .price_wrapper {
+    padding-top: 100px; }
+    .price .price_wrapper h2 {
+      font-size: 28px; }
+    .price .price_wrapper .price_table_tablet table {
+      font-size: 18px; }
+      .price .price_wrapper .price_table_tablet table tr td, .price .price_wrapper .price_table_tablet table tr th {
+        padding: 20px; }
+  .price .price_clock p {
+    font-size: 18px; } }
+
+@media (max-width: 1100px) {
+  .work-photo .photo_wrapper .photo_first:before {
+    left: -1px;
+    transform: rotateZ(0deg); }
+  .work-photo .photo_wrapper .photo_first:after {
+    left: 10px; }
+  .work-photo .photo_wrapper .photo_first .photo_text {
+    justify-content: start; }
+    .work-photo .photo_wrapper .photo_first .photo_text h3 {
+      font-size: 28px; }
+    .work-photo .photo_wrapper .photo_first .photo_text p {
+      font-size: 20px; }
+    .work-photo .photo_wrapper .photo_first .photo_text .photo_elem span:nth-child(3) img {
+      width: 50px;
+      height: 15px;
+      left: -60px; }
+    .work-photo .photo_wrapper .photo_first .photo_text .photo_elem span {
+      margin-right: 80px;
+      left: 60px; }
+      .work-photo .photo_wrapper .photo_first .photo_text .photo_elem span img {
+        width: 25px;
+        height: 25px;
+        top: -5px;
+        left: -35px; }
+  .work-photo .photo_wrapper .photo_two .photo_item .photo_text {
+    justify-content: start; }
+    .work-photo .photo_wrapper .photo_two .photo_item .photo_text h3 {
+      font-size: 28px; }
+    .work-photo .photo_wrapper .photo_two .photo_item .photo_text p {
+      font-size: 20px; }
+    .work-photo .photo_wrapper .photo_two .photo_item .photo_text .photo_elem span:nth-child(2) img {
+      width: 50px;
+      height: 15px;
+      left: -60px; }
+    .work-photo .photo_wrapper .photo_two .photo_item .photo_text .photo_elem span {
+      left: 40px; }
+      .work-photo .photo_wrapper .photo_two .photo_item .photo_text .photo_elem span img {
+        width: 25px;
+        height: 25px;
+        top: -5px;
+        left: -35px; } }
+
+@media (max-width: 1000px) {
+  .work-photo {
+    width: 90%; }
+    .work-photo .photo_wrapper .photo_first .photo_text {
+      padding: 20px; }
+  .price .price_wrapper .price_table_tablet table tr td, .price .price_wrapper .price_table table tr th {
+    padding: 10px; } }
+
+@media (max-width: 800px) {
+  .work-photo .photo_wrapper .photo_two {
+    margin-bottom: 30px; }
+  .price {
+    padding: 1px 0 80px 0; }
+    .price .price_wrapper {
+      width: 90%;
+      flex-direction: column; }
+      .price .price_wrapper .price_table_tablet table {
+        width: 100%; }
+    .price .price_clock {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 20px; }
+      .price .price_clock .pclock {
+        width: 20%;
+        margin: 0; }
+      .price .price_clock p {
+        font-size: 28px;
+        margin: 0;
+        box-sizing: border-box; } }
+
+@media (max-width: 650px) {
+  .work-photo .photo__title {
+    display: block;
+    text-align: center; }
+    .work-photo .photo__title h2 {
+      font-size: 32px; }
+    .work-photo .photo__title a {
+      display: none; } }
+
+@media (max-width: 600px) {
+  .price .price_wrapper {
+    padding-top: 0; }
+    .price .price_wrapper h2 {
+      position: relative;
+      text-align: center; }
+    .price .price_wrapper .price_table_tablet {
+      display: none; }
+    .price .price_wrapper .price_table_mobile {
+      margin-top: 40px; } }
+
+@media (max-width: 500px) {
+  .work-angel-div {
+    display: none; }
+  .work-photo .photo_wrapper .photo_first {
+    flex-direction: column; }
+    .work-photo .photo_wrapper .photo_first:before {
+      bottom: 400px;
+      top: auto; }
+    .work-photo .photo_wrapper .photo_first:after {
+      bottom: 413px;
+      top: auto; }
+  .work-photo .photo_wrapper .photo_two .photo_item {
+    flex-direction: column; }
+    .work-photo .photo_wrapper .photo_two .photo_item picture .ours-work {
+      width: 100%; }
+  .work-photo .photo_wrapper .photo_first .photo_text {
+    padding: 20px 20px 100px 20px; }
+  .work-photo .photo_wrapper .photo_two .photo_item .photo_text {
+    padding: 20px 20px 80px 20px; }
+  .price .price_wrapper {
+    width: 95%; }
+  .price .price_clock p {
+    font-size: 22px;
+    padding: 10px; }
+  .price .price_clock .pclock {
+    width: 30%; } }
+
+@media (max-width: 330px) {
+  .price .price_clock p {
+    font-size: 20px; }
+  .price .price_clock .pclock {
+    width: 60%; } }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../libs/owl.carousel.css">
+  <link rel="stylesheet" href="../libs/magnific.css">
+  <title></title>
+  <body>
+    <div class="main">
+      <div class="navbar-background">
+        <div class="logo-mobile"><img src="../img/svg/logotype-mobile.svg" alt="лого мобайл"></div>
+        <div class="navbar"><a class="nava nav-one" href="index.html">главная</a><a href="work.html">наши работы</a><a href="form.html">записаться</a><a href="https://htmlacademy.ru/about">контакты</a><a href="https://htmlacademy.ru/">HTML ACADEMY</a><a class="navbar_form" href="#popup_form"> <span> <img class="login_button" src="../img/svg/login.svg" alt="login button"><span class="entrance">войти </span></span></a>
+          <div class="navbar__popup" href="#"><a class="popup_button" href="#popup_menu"><img class="popup_icon" src="../img/svg/menu_btn.svg" alt="menu button"></a>
+            <div class="popup_menu mfp-hide" id="popup_menu"><a href="index.html">главная </a><a href="work.html">наши работы</a><a href="form.html">записаться</a><a href="https://htmlacademy.ru/about">контакты</a><a href="https://htmlacademy.ru/">HTML ACADEMY</a><a class="navbar_form" href="#popup_form">Войти<img class="login_button" src="../img/svg/login-mobile.svg" alt="login button"></a></div>
+          </div>
+          <div class="nav_form mfp-hide" id="popup_form">
+            <form action="login" method="post">
+              <h3>Личный кабинет</h3>
+              <p>Введите свой логин и пароль, чтобы войти</p>
+              <input type="text" name="username" placeholder="Логин"><span></span>
+              <input type="password" name="password" placeholder="Пароль"><span></span><br>
+              <input type="checkbox" checked><span>Запомните меня </span><a class="form-elem" href="#">Я забыл пароль!</a><br>
+              <input type="submit" name="submit" value="Войти"><a class="form-close mfp-close" href="#">Закрыть</a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <picture>
+        <source media="(min-width: 768px)" srcset="../img/back-tablet.jpg">
+        <source media="(min-width: 1200px)" srcset="../img/back-desktop.jpg"><img class="back-image" src="/img/back-desktop.jpg" alt="barbershop">
+      </picture><img class="logo-tablet" src="../img/svg/logotype-tablet.svg" alt="barbershop-tablet"><img class="logo-desktop" src="../img/svg/logotype-desktop.svg" alt="barbershop-desktop">
+      <div class="angel-div-pinky"><img class="info-angel" src="../img/svg/angle_div_pinky.svg" alt="image"></div>
+      <div class="main_form">
+        <div class="form_wrapper">
+          <div class="form_title">
+            <h2>ЗАПИСЬ НА СТРИЖКУ</h2><a href="index.html">НА ГЛАВНУЮ</a>
+          </div>
+          <form action="login" method="post">
+            <div class="form_data">
+              <input type="text" name="firstname" placeholder="Имя">
+              <input type="text" name="lastname" placeholder="Фамилия">
+              <input type="text" name="thirdname" placeholder="Отчество">
+              <input type="phone" name="phone" placeholder="Контактный телефон">
+              <input type="email" name="email" placeholder="Контактный e-mail">
+              <textarea name="field" cols="30" rows="1" placeholder="Доп. Информация для мастера"></textarea>
+            </div>
+            <fieldset class="form_model">
+              <legend>ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ</legend>
+              <div class="form_model_set">
+                <label>
+                  <input type="radio" name="radio" checked>
+                  <p class="check">адмирал</p><img src="../img/svg/beard-1.svg" alt="model beard">
+                </label>
+                <label>
+                  <input type="radio" name="radio">
+                  <p class="check">лесоруб</p><img src="../img/svg/beard-2.svg" alt="model beard">
+                </label>
+                <label>
+                  <input type="radio" name="radio">
+                  <p class="check">полярник</p><img src="../img/svg/beard-3.svg" alt="model beard">
+                </label>
+                <label>
+                  <input type="radio" name="radio">
+                  <p class="check">боярин</p><img src="../img/svg/beard-4.svg" alt="model beard">
+                </label>
+                <label>
+                  <input type="radio" name="radio">
+                  <p class="check">мудрец</p><img src="../img/svg/beard-5.svg" alt="model beard">
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form_service">
+              <legend>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ:</legend>
+              <div class="form_service_set">
+                <label>
+                  <input type="checkbox" checked><span>Подкрасить бороду</span>
+                </label>
+                <label>
+                  <input type="checkbox"><span>Причесать бороду</span>
+                </label>
+                <label>
+                  <input type="checkbox"><span>Убрать седину</span>
+                </label>
+                <label>
+                  <input type="checkbox"><span>Накрутить усы</span>
+                </label>
+                <label>
+                  <input type="checkbox" checked><span>Подровнять виски</span>
+                </label>
+                <label>
+                  <input type="checkbox"><span>Отполировать лысину</span>
+                </label>
+              </div>
+            </fieldset>
+            <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+          </form>
+        </div>
+      </div>
+      <div class="angel-div-gray"><img class="info-angel" src="../img/svg/angle_div_gray.svg" alt="image"></div>
+      <div class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <h3>БАРБЕРШОП БОРОДИНСКИЙ</h3>
+            <p>г.Санкт-Питербург, ул.Большая Конюшенная 19/8 <a href="#">Тел.: +7 (812) 555-66-66</a></p>
+          </div>
+          <div class="footer__item">
+            <h3>Давайте дружить!</h3>
+            <div class="footer_social_wrapper"><a class="footer_social" href="#"><img src="../img/vk-icon-big.png" alt="vkontakt"></a><a class="footer_social" href="#"><img src="../img/facebook-icon-big.png" alt="facebook"></a><a class="footer_social" href="#"><img src="../img/insta-icon-big.png" alt="instagram"></a></div>
+          </div>
+          <div class="footer__item">
+            <h3>Разработано:</h3><a href="#">HTML ACADEMY</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/magnific.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/common.js"></script>

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-h1, h2, h3, h4, h5, h6, p, span, td, tr, th, a {
+h1, h2, h3, h4, h5, h6, p, span, td, tr, th, a, legend {
   font-family: sans-serif; }
 
 body {
@@ -117,7 +117,7 @@ body {
       top: 5px;
       margin-bottom: 20px; }
     .nav_form form .form-elem {
-      padding-left: 30px;
+      padding-left: 20px;
       color: #000000; }
     .nav_form form input[type="submit"] {
       display: inline-block;
@@ -657,7 +657,8 @@ body {
     position: relative;
     width: 80%;
     margin: 0 auto;
-    padding-top: 150px; }
+    padding-top: 150px;
+    cursor: default; }
     .price .price_wrapper h2 {
       position: absolute;
       top: 20px;
@@ -683,7 +684,8 @@ body {
       .price .price_wrapper .price_table_mobile table tr td {
         padding: 10px; }
   .price .price_clock {
-    border: 1px solid gray; }
+    border: 1px solid gray;
+    margin-left: 25px; }
     .price .price_clock .pclock {
       width: 50%;
       margin: 35px auto; }
@@ -693,6 +695,151 @@ body {
       font-size: 26px;
       padding: 10px 30px;
       text-align: center; }
+
+.angel-div-pinky {
+  position: relative; }
+  .angel-div-pinky .info-angel {
+    position: absolute;
+    width: 100%;
+    bottom: 1px; }
+
+.main_form {
+  width: 100%;
+  background: #f9f5f2;
+  padding-bottom: 120px; }
+  .main_form .form_wrapper {
+    width: 80%;
+    margin: 0 auto; }
+    .main_form .form_wrapper .form_title {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 40px 0px;
+      box-sizing: border-box; }
+      .main_form .form_wrapper .form_title h2 {
+        margin: 0;
+        line-height: 40px;
+        font-size: 40px; }
+      .main_form .form_wrapper .form_title a {
+        margin-left: auto;
+        border: 1px solid #EDE6E1;
+        padding: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        font-size: 24px; }
+    .main_form .form_wrapper input::placeholder, .main_form .form_wrapper textarea::placeholder {
+      color: #000;
+      font-size: 18px; }
+    .main_form .form_wrapper input:focus::placeholder {
+      color: transparent; }
+    .main_form .form_wrapper input, .main_form .form_wrapper fieldset {
+      border: 1px solid #EDE6E1;
+      padding: 10px 20px;
+      line-height: 20px;
+      box-sizing: border-box; }
+    .main_form .form_wrapper .form_data {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%; }
+      .main_form .form_wrapper .form_data input[type="text"] {
+        width: 30%;
+        margin-bottom: 40px; }
+      .main_form .form_wrapper .form_data input[type="phone"], .main_form .form_wrapper .form_data input[type="email"] {
+        width: 48%;
+        margin-bottom: 40px; }
+      .main_form .form_wrapper .form_data textarea {
+        width: 100%;
+        height: 20vh;
+        line-height: 20px;
+        padding: 10px 20px;
+        border: 1px solid #EDE6E1; }
+    .main_form .form_wrapper .form_model {
+      margin: 60px 0 60px 0;
+      width: 100%; }
+      .main_form .form_wrapper .form_model legend {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center; }
+      .main_form .form_wrapper .form_model .form_model_set {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 50px 20px 20px 20px; }
+        .main_form .form_wrapper .form_model .form_model_set label {
+          width: 10%;
+          text-align: center; }
+          .main_form .form_wrapper .form_model .form_model_set label input[type="radio"] {
+            opacity: 0; }
+          .main_form .form_wrapper .form_model .form_model_set label input[type="radio"]:checked + .check:after {
+            opacity: 1; }
+          .main_form .form_wrapper .form_model .form_model_set label p {
+            position: relative; }
+            .main_form .form_wrapper .form_model .form_model_set label p:before {
+              position: absolute;
+              content: "";
+              border: 1px solid #E8E1DC;
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              top: -50px;
+              left: 5px;
+              background: #fff; }
+            .main_form .form_wrapper .form_model .form_model_set label p:after {
+              position: absolute;
+              content: "";
+              border: 1px solid #E8E1DC;
+              border-radius: 50%;
+              width: 20px;
+              height: 20px;
+              top: -40px;
+              left: 15px;
+              background: #F9DBC4;
+              opacity: 0; }
+    .main_form .form_wrapper .form_service {
+      width: 100%; }
+      .main_form .form_wrapper .form_service legend {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center; }
+      .main_form .form_wrapper .form_service .form_service_set {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .main_form .form_wrapper .form_service .form_service_set label {
+          width: 30%;
+          margin: 20px 0 20px 0; }
+          .main_form .form_wrapper .form_service .form_service_set label input[type="checkbox"] {
+            opacity: 0; }
+          .main_form .form_wrapper .form_service .form_service_set label input[type="checkbox"]:checked + span:after {
+            opacity: 1; }
+          .main_form .form_wrapper .form_service .form_service_set label span {
+            position: relative;
+            padding-left: 40px; }
+            .main_form .form_wrapper .form_service .form_service_set label span:before {
+              position: absolute;
+              content: "";
+              border: 1px solid #e8e1dc;
+              width: 30px;
+              height: 30px;
+              top: -8px;
+              left: 0;
+              background: #ffffff; }
+            .main_form .form_wrapper .form_service .form_service_set label span:after {
+              position: absolute;
+              content: "\f00c";
+              font-family: FontAwesome;
+              font-size: 20px;
+              left: 6px;
+              opacity: 0; }
+    .main_form .form_wrapper input[type="submit"] {
+      background: #816550;
+      color: #fff;
+      width: 100%;
+      font-size: 24px;
+      padding: 15px;
+      margin-top: 50px; }
 
 @media (min-width: 1800px) {
   .logo-desktop {
@@ -1203,3 +1350,83 @@ body {
     font-size: 20px; }
   .price .price_clock .pclock {
     width: 60%; } }
+
+@media (min-width: 600px) {
+  .price_table_mobile {
+    display: none; } }
+
+@media (max-width: 1000px) {
+  .main_form .form_wrapper .form_service .form_service_set label {
+    width: 45%; } }
+
+@media (max-width: 800px) {
+  .main_form .form_wrapper input {
+    padding: 20px; }
+  .main_form .form_wrapper .form_data input[type="text"] {
+    width: 33%; }
+  .main_form .form_wrapper .form_data input[type="phone"] {
+    width: 100%; }
+  .main_form .form_wrapper .form_data input[type="email"] {
+    width: 100%; }
+  .main_form .form_wrapper .form_data textarea {
+    padding: 20px; }
+  .main_form .form_wrapper .form_title h2 {
+    font-size: 30px; }
+  .main_form .form_wrapper .form_title a {
+    font-size: 20px; }
+  .main_form .form_wrapper .form_model legend, .main_form .form_wrapper .form_service legend {
+    font-size: 24px; } }
+
+@media (max-width: 600px) {
+  .main_form .form_wrapper {
+    width: 95%; }
+    .main_form .form_wrapper .form_title {
+      padding: 0; }
+      .main_form .form_wrapper .form_title a {
+        display: none; }
+      .main_form .form_wrapper .form_title h2 {
+        padding: 40px 60px; }
+    .main_form .form_wrapper .form_data input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px; }
+    .main_form .form_wrapper .form_data input[type="text"]:nth-child(3) {
+      margin-bottom: 40px; }
+    .main_form .form_wrapper .form_data input[type="phone"] {
+      margin-bottom: 10px; }
+    .main_form .form_wrapper .form_data input[type="email"] {
+      margin-bottom: 40px; } }
+
+@media (max-width: 500px) {
+  .angel-div-pinky {
+    display: none; }
+  .main_form {
+    padding-bottom: 60px; }
+    .main_form .form_wrapper fieldset {
+      padding: 0; }
+    .main_form .form_wrapper .form_model .form_model_set {
+      padding: 10px;
+      justify-content: center; }
+      .main_form .form_wrapper .form_model .form_model_set label {
+        width: 25%;
+        margin-top: 50px; }
+        .main_form .form_wrapper .form_model .form_model_set label p:before {
+          left: 35px; }
+        .main_form .form_wrapper .form_model .form_model_set label p:after {
+          left: 45px; }
+    .main_form .form_wrapper .form_service .form_service_set {
+      padding: 20px; }
+      .main_form .form_wrapper .form_service .form_service_set label {
+        width: 100%; } }
+
+@media (max-width: 400px) {
+  .main_form .form_wrapper .form_model .form_model_set label {
+    width: 32%; }
+    .main_form .form_wrapper .form_model .form_model_set label p:before {
+      left: 25px; }
+    .main_form .form_wrapper .form_model .form_model_set label p:after {
+      left: 35px; }
+  .main_form .form_wrapper .form_title h2 {
+    font-size: 22px;
+    padding: 15px 30px; }
+  .main_form .form_wrapper .form_model legend, .main_form .form_wrapper .form_service legend {
+    font-size: 18px; } }

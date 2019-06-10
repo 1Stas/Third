@@ -711,6 +711,36 @@ body
 		position: absolute
 		width: 100%
 		bottom: 1px
+	
+.main_form
+	.fail, .success
+		position: absolute
+		text-align: center
+		padding: 40px
+		box-sizing: border-box
+		width: 600px
+		height: 400px
+		background: #fff
+		left: 700px
+		box-shadow: 2px 2px 10px
+		z-index: 1
+		a.mfp-close
+			position: static
+			background: #816550
+			color: #fff
+			width: 100%
+			font-size: 30px
+			padding: 20px 60px
+			text-decoration: none
+			cursor: pointer
+		h2 
+			font-size: 40px
+			margin-top: 40px
+			font-weight: 800
+		p 
+			font-size: 30px
+			margin-bottom: 60px
+			line-height: 40px
 
 
 .main_form
@@ -1117,7 +1147,6 @@ body
 			.owl-dots
 				top: 5px
 
-
 @media (min-width: 500px) and (max-width: 700px)
 	.navbar
 		padding: 10px
@@ -1267,7 +1296,6 @@ body
 		display: none
 
 //Page 2 Work @ media 
-
 
 @media (max-width: 1200px)
 	.work-photo .photo_wrapper .photo_first .ours-work
@@ -1457,9 +1485,32 @@ body
 
 //Page 3 Form @ media
 
+@media (max-width: 1600px)
+	.main_form 
+		.fail, .success
+			left: 500px
+
+@media (max-width: 1300px)
+	.main_form 
+		.fail, .success
+			left: 300px
+
 @media (max-width: 1000px)
 	.main_form .form_wrapper .form_service .form_service_set label
 		width: 45%
+
+	.main_form 
+		.fail, .success
+			left: 100px
+			padding: 20px
+			width: 400px
+			height: 380px
+			a
+				font-size: 24px
+			h2 
+				font-size: 30px
+			p
+				font-size: 22px
 
 @media (max-width: 800px)
 	.main_form .form_wrapper 
@@ -1526,6 +1577,14 @@ body
 				padding: 20px
 				label 
 					width: 100%
+
+	.main_form 
+		.fail, .success
+			left: 100px
+			padding: 20px
+			width: 320px
+			height: 420px
+			left: 0
 
 @media (max-width: 400px)
 	.main_form .form_wrapper .form_model .form_model_set label

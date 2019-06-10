@@ -96,6 +96,14 @@ html
 										p.check мудрец
 										img(src="../img/svg/beard-5.svg", alt="model beard")
 							fieldset.form_service
+								.fail.mfp-hide1
+									h2 НЕУДАЧА
+									p Что то пошло не так. Проверьте выделенные красным поля формы.
+									a.mfp-close(href="#") OK
+								.success.mfp-hide
+									h2 ЭТО УСПЕХ!
+									p Ваша заявка отправлена. Ожидайте, мы свяжемся с вами как только будет минутка.
+									a.mfp-close(href="#") ЗАКРЫТЬ
 								legend ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ:
 								.form_service_set
 									label
@@ -117,8 +125,6 @@ html
 										input(type="checkbox")
 										span Отполировать лысину
 							input(type="submit" value="ОТПРАВИТЬ ЗАЯВКУ") 
-
-
 				.angel-div-gray
 					img.info-angel(src="../img/svg/angle_div_gray.svg", alt="image")
 				.footer
@@ -139,6 +145,7 @@ html
 						.footer__item
 							h3 Разработано:
 							a(href="#") HTML ACADEMY
+
 
 script(src="../js/jquery.min.js")
 script(src="../js/magnific.js")
